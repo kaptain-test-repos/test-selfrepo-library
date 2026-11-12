@@ -3,5 +3,5 @@
 # library commits, so a run shows which commit of the library it came from.
 set -euo pipefail
 
-echo "PROBE marker=alpha origin=library caller=${1:-none}"
+echo "PROBE marker=beta origin=library caller=${1:-none}"
 echo "PROBE script=${BASH_SOURCE[0]}"

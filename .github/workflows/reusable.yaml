@@ -43,3 +43,6 @@ jobs:
 
       - name: Job context inside an action
         uses: $/src/actions/probe-job-context
+
+      - name: Guarded action through self-repository syntax
+        uses: $/src/actions/guarded

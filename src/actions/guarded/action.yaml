@@ -1,0 +1,22 @@
+name: Guarded
+description: Refuses to run unless the job is defined by a workflow from this same repository and commit
+
+runs:
+  using: composite
+  steps:
+    - name: Refuse use outside this repository's own workflows
+      if: job.workflow_repository != github.action_repository || job.workflow_sha != github.action_ref
+      shell: bash
+      env:
+        JOB_WORKFLOW_REPOSITORY: ${{ job.workflow_repository }}
+        JOB_WORKFLOW_SHA: ${{ job.workflow_sha }}
+        ACTION_REPOSITORY: ${{ github.action_repository }}
+        ACTION_REF: ${{ github.action_ref }}
+      run: |
+        echo "::error::This action is internal to ${ACTION_REPOSITORY} and only runs from that repository's own workflows."
+        echo "GUARD refused: job workflow ${JOB_WORKFLOW_REPOSITORY}@${JOB_WORKFLOW_SHA}, action ${ACTION_REPOSITORY}@${ACTION_REF}"
+        exit 1
+
+    - name: Guarded work
+      shell: bash
+      run: echo "GUARD passed, guarded work ran"
