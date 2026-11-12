@@ -1,0 +1,8 @@
+name: Outer
+description: Composite action that calls a sibling action with the self-repository syntax
+
+runs:
+  using: composite
+  steps:
+    - name: Nested call
+      uses: $/src/actions/probe

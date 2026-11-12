@@ -1,0 +1,11 @@
+name: Dogfood
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+permissions: {}
+jobs:
+  build:
+    uses: $/.github/workflows/reusable.yaml
+    permissions:
+      contents: read

@@ -1,0 +1,35 @@
+name: Probe
+description: Reports where the runner loaded this action from and runs a sibling script
+
+outputs:
+  scripts-dir:
+    description: Absolute path of the scripts directory beside this action
+    value: ${{ steps.report.outputs.scripts-dir }}
+
+runs:
+  using: composite
+  steps:
+    - name: Report where this action lives
+      id: report
+      shell: bash
+      env:
+        CTX_ACTION_PATH: ${{ github.action_path }}
+        CTX_ACTION_REPOSITORY: ${{ github.action_repository }}
+        CTX_ACTION_REF: ${{ github.action_ref }}
+        CTX_REPOSITORY: ${{ github.repository }}
+        CTX_WORKSPACE: ${{ github.workspace }}
+      run: |
+        echo "ENV GITHUB_ACTION_PATH=${GITHUB_ACTION_PATH:-}"
+        echo "ENV GITHUB_ACTION_REPOSITORY=${GITHUB_ACTION_REPOSITORY:-}"
+        echo "ENV GITHUB_ACTION_REF=${GITHUB_ACTION_REF:-}"
+        env | grep -E '^CTX_' | sort
+        echo "--- repo root as the action sees it"
+        ls -la "${GITHUB_ACTION_PATH}/../../.."
+        echo "--- scripts/main"
+        ls -la "${GITHUB_ACTION_PATH}/../../scripts/main"
+        echo "scripts-dir=$(cd "${GITHUB_ACTION_PATH}/../../scripts" && pwd)" >> "$GITHUB_OUTPUT"
+
+    # Same form the real actions use.
+    - name: Run sibling script through the action path
+      shell: bash
+      run: "${GITHUB_ACTION_PATH}/../../scripts/main/probe from-action"

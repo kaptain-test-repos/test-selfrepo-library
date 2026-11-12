@@ -1,0 +1,45 @@
+name: Reusable Probe
+on:
+  workflow_call: {}
+permissions: {}
+jobs:
+  probe:
+    name: Probe
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      # Deliberately no checkout anywhere in this job.
+      - name: Workflow-level contexts and empty workspace
+        shell: bash
+        env:
+          JOBCTX_WORKFLOW_REF: ${{ job.workflow_ref }}
+          JOBCTX_WORKFLOW_SHA: ${{ job.workflow_sha }}
+          JOBCTX_WORKFLOW_REPOSITORY: ${{ job.workflow_repository }}
+          JOBCTX_WORKFLOW_FILE_PATH: ${{ job.workflow_file_path }}
+          GHCTX_WORKFLOW_REF: ${{ github.workflow_ref }}
+          GHCTX_WORKFLOW_SHA: ${{ github.workflow_sha }}
+          GHCTX_REPOSITORY: ${{ github.repository }}
+          GHCTX_EVENT_NAME: ${{ github.event_name }}
+        run: |
+          env | grep -E '^(JOBCTX_|GHCTX_)' | sort
+          echo "--- workspace ${GITHUB_WORKSPACE}"
+          ls -la "${GITHUB_WORKSPACE}"
+
+      - name: Action through self-repository syntax
+        id: probe
+        uses: $/src/actions/probe
+
+      - name: Nested action through self-repository syntax
+        uses: $/src/actions/outer
+
+      - name: Plain step runs a script at the path the action reported
+        shell: bash
+        env:
+          SCRIPTS_DIR: ${{ steps.probe.outputs.scripts-dir }}
+        run: |
+          echo "SCRIPTS_DIR=${SCRIPTS_DIR}"
+          "${SCRIPTS_DIR}/main/probe" from-plain-step
+
+      - name: Job context inside an action
+        uses: $/src/actions/probe-job-context
