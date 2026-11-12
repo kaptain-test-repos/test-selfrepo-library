@@ -1,0 +1,916 @@
+name: Many Outputs
+description: Declares 300 outputs fed by one script step, to prove a large outputs block works
+
+outputs:
+  VALUE_1:
+    description: Value 1
+    value: ${{ steps.emit.outputs.VALUE_1 }}
+  VALUE_2:
+    description: Value 2
+    value: ${{ steps.emit.outputs.VALUE_2 }}
+  VALUE_3:
+    description: Value 3
+    value: ${{ steps.emit.outputs.VALUE_3 }}
+  VALUE_4:
+    description: Value 4
+    value: ${{ steps.emit.outputs.VALUE_4 }}
+  VALUE_5:
+    description: Value 5
+    value: ${{ steps.emit.outputs.VALUE_5 }}
+  VALUE_6:
+    description: Value 6
+    value: ${{ steps.emit.outputs.VALUE_6 }}
+  VALUE_7:
+    description: Value 7
+    value: ${{ steps.emit.outputs.VALUE_7 }}
+  VALUE_8:
+    description: Value 8
+    value: ${{ steps.emit.outputs.VALUE_8 }}
+  VALUE_9:
+    description: Value 9
+    value: ${{ steps.emit.outputs.VALUE_9 }}
+  VALUE_10:
+    description: Value 10
+    value: ${{ steps.emit.outputs.VALUE_10 }}
+  VALUE_11:
+    description: Value 11
+    value: ${{ steps.emit.outputs.VALUE_11 }}
+  VALUE_12:
+    description: Value 12
+    value: ${{ steps.emit.outputs.VALUE_12 }}
+  VALUE_13:
+    description: Value 13
+    value: ${{ steps.emit.outputs.VALUE_13 }}
+  VALUE_14:
+    description: Value 14
+    value: ${{ steps.emit.outputs.VALUE_14 }}
+  VALUE_15:
+    description: Value 15
+    value: ${{ steps.emit.outputs.VALUE_15 }}
+  VALUE_16:
+    description: Value 16
+    value: ${{ steps.emit.outputs.VALUE_16 }}
+  VALUE_17:
+    description: Value 17
+    value: ${{ steps.emit.outputs.VALUE_17 }}
+  VALUE_18:
+    description: Value 18
+    value: ${{ steps.emit.outputs.VALUE_18 }}
+  VALUE_19:
+    description: Value 19
+    value: ${{ steps.emit.outputs.VALUE_19 }}
+  VALUE_20:
+    description: Value 20
+    value: ${{ steps.emit.outputs.VALUE_20 }}
+  VALUE_21:
+    description: Value 21
+    value: ${{ steps.emit.outputs.VALUE_21 }}
+  VALUE_22:
+    description: Value 22
+    value: ${{ steps.emit.outputs.VALUE_22 }}
+  VALUE_23:
+    description: Value 23
+    value: ${{ steps.emit.outputs.VALUE_23 }}
+  VALUE_24:
+    description: Value 24
+    value: ${{ steps.emit.outputs.VALUE_24 }}
+  VALUE_25:
+    description: Value 25
+    value: ${{ steps.emit.outputs.VALUE_25 }}
+  VALUE_26:
+    description: Value 26
+    value: ${{ steps.emit.outputs.VALUE_26 }}
+  VALUE_27:
+    description: Value 27
+    value: ${{ steps.emit.outputs.VALUE_27 }}
+  VALUE_28:
+    description: Value 28
+    value: ${{ steps.emit.outputs.VALUE_28 }}
+  VALUE_29:
+    description: Value 29
+    value: ${{ steps.emit.outputs.VALUE_29 }}
+  VALUE_30:
+    description: Value 30
+    value: ${{ steps.emit.outputs.VALUE_30 }}
+  VALUE_31:
+    description: Value 31
+    value: ${{ steps.emit.outputs.VALUE_31 }}
+  VALUE_32:
+    description: Value 32
+    value: ${{ steps.emit.outputs.VALUE_32 }}
+  VALUE_33:
+    description: Value 33
+    value: ${{ steps.emit.outputs.VALUE_33 }}
+  VALUE_34:
+    description: Value 34
+    value: ${{ steps.emit.outputs.VALUE_34 }}
+  VALUE_35:
+    description: Value 35
+    value: ${{ steps.emit.outputs.VALUE_35 }}
+  VALUE_36:
+    description: Value 36
+    value: ${{ steps.emit.outputs.VALUE_36 }}
+  VALUE_37:
+    description: Value 37
+    value: ${{ steps.emit.outputs.VALUE_37 }}
+  VALUE_38:
+    description: Value 38
+    value: ${{ steps.emit.outputs.VALUE_38 }}
+  VALUE_39:
+    description: Value 39
+    value: ${{ steps.emit.outputs.VALUE_39 }}
+  VALUE_40:
+    description: Value 40
+    value: ${{ steps.emit.outputs.VALUE_40 }}
+  VALUE_41:
+    description: Value 41
+    value: ${{ steps.emit.outputs.VALUE_41 }}
+  VALUE_42:
+    description: Value 42
+    value: ${{ steps.emit.outputs.VALUE_42 }}
+  VALUE_43:
+    description: Value 43
+    value: ${{ steps.emit.outputs.VALUE_43 }}
+  VALUE_44:
+    description: Value 44
+    value: ${{ steps.emit.outputs.VALUE_44 }}
+  VALUE_45:
+    description: Value 45
+    value: ${{ steps.emit.outputs.VALUE_45 }}
+  VALUE_46:
+    description: Value 46
+    value: ${{ steps.emit.outputs.VALUE_46 }}
+  VALUE_47:
+    description: Value 47
+    value: ${{ steps.emit.outputs.VALUE_47 }}
+  VALUE_48:
+    description: Value 48
+    value: ${{ steps.emit.outputs.VALUE_48 }}
+  VALUE_49:
+    description: Value 49
+    value: ${{ steps.emit.outputs.VALUE_49 }}
+  VALUE_50:
+    description: Value 50
+    value: ${{ steps.emit.outputs.VALUE_50 }}
+  VALUE_51:
+    description: Value 51
+    value: ${{ steps.emit.outputs.VALUE_51 }}
+  VALUE_52:
+    description: Value 52
+    value: ${{ steps.emit.outputs.VALUE_52 }}
+  VALUE_53:
+    description: Value 53
+    value: ${{ steps.emit.outputs.VALUE_53 }}
+  VALUE_54:
+    description: Value 54
+    value: ${{ steps.emit.outputs.VALUE_54 }}
+  VALUE_55:
+    description: Value 55
+    value: ${{ steps.emit.outputs.VALUE_55 }}
+  VALUE_56:
+    description: Value 56
+    value: ${{ steps.emit.outputs.VALUE_56 }}
+  VALUE_57:
+    description: Value 57
+    value: ${{ steps.emit.outputs.VALUE_57 }}
+  VALUE_58:
+    description: Value 58
+    value: ${{ steps.emit.outputs.VALUE_58 }}
+  VALUE_59:
+    description: Value 59
+    value: ${{ steps.emit.outputs.VALUE_59 }}
+  VALUE_60:
+    description: Value 60
+    value: ${{ steps.emit.outputs.VALUE_60 }}
+  VALUE_61:
+    description: Value 61
+    value: ${{ steps.emit.outputs.VALUE_61 }}
+  VALUE_62:
+    description: Value 62
+    value: ${{ steps.emit.outputs.VALUE_62 }}
+  VALUE_63:
+    description: Value 63
+    value: ${{ steps.emit.outputs.VALUE_63 }}
+  VALUE_64:
+    description: Value 64
+    value: ${{ steps.emit.outputs.VALUE_64 }}
+  VALUE_65:
+    description: Value 65
+    value: ${{ steps.emit.outputs.VALUE_65 }}
+  VALUE_66:
+    description: Value 66
+    value: ${{ steps.emit.outputs.VALUE_66 }}
+  VALUE_67:
+    description: Value 67
+    value: ${{ steps.emit.outputs.VALUE_67 }}
+  VALUE_68:
+    description: Value 68
+    value: ${{ steps.emit.outputs.VALUE_68 }}
+  VALUE_69:
+    description: Value 69
+    value: ${{ steps.emit.outputs.VALUE_69 }}
+  VALUE_70:
+    description: Value 70
+    value: ${{ steps.emit.outputs.VALUE_70 }}
+  VALUE_71:
+    description: Value 71
+    value: ${{ steps.emit.outputs.VALUE_71 }}
+  VALUE_72:
+    description: Value 72
+    value: ${{ steps.emit.outputs.VALUE_72 }}
+  VALUE_73:
+    description: Value 73
+    value: ${{ steps.emit.outputs.VALUE_73 }}
+  VALUE_74:
+    description: Value 74
+    value: ${{ steps.emit.outputs.VALUE_74 }}
+  VALUE_75:
+    description: Value 75
+    value: ${{ steps.emit.outputs.VALUE_75 }}
+  VALUE_76:
+    description: Value 76
+    value: ${{ steps.emit.outputs.VALUE_76 }}
+  VALUE_77:
+    description: Value 77
+    value: ${{ steps.emit.outputs.VALUE_77 }}
+  VALUE_78:
+    description: Value 78
+    value: ${{ steps.emit.outputs.VALUE_78 }}
+  VALUE_79:
+    description: Value 79
+    value: ${{ steps.emit.outputs.VALUE_79 }}
+  VALUE_80:
+    description: Value 80
+    value: ${{ steps.emit.outputs.VALUE_80 }}
+  VALUE_81:
+    description: Value 81
+    value: ${{ steps.emit.outputs.VALUE_81 }}
+  VALUE_82:
+    description: Value 82
+    value: ${{ steps.emit.outputs.VALUE_82 }}
+  VALUE_83:
+    description: Value 83
+    value: ${{ steps.emit.outputs.VALUE_83 }}
+  VALUE_84:
+    description: Value 84
+    value: ${{ steps.emit.outputs.VALUE_84 }}
+  VALUE_85:
+    description: Value 85
+    value: ${{ steps.emit.outputs.VALUE_85 }}
+  VALUE_86:
+    description: Value 86
+    value: ${{ steps.emit.outputs.VALUE_86 }}
+  VALUE_87:
+    description: Value 87
+    value: ${{ steps.emit.outputs.VALUE_87 }}
+  VALUE_88:
+    description: Value 88
+    value: ${{ steps.emit.outputs.VALUE_88 }}
+  VALUE_89:
+    description: Value 89
+    value: ${{ steps.emit.outputs.VALUE_89 }}
+  VALUE_90:
+    description: Value 90
+    value: ${{ steps.emit.outputs.VALUE_90 }}
+  VALUE_91:
+    description: Value 91
+    value: ${{ steps.emit.outputs.VALUE_91 }}
+  VALUE_92:
+    description: Value 92
+    value: ${{ steps.emit.outputs.VALUE_92 }}
+  VALUE_93:
+    description: Value 93
+    value: ${{ steps.emit.outputs.VALUE_93 }}
+  VALUE_94:
+    description: Value 94
+    value: ${{ steps.emit.outputs.VALUE_94 }}
+  VALUE_95:
+    description: Value 95
+    value: ${{ steps.emit.outputs.VALUE_95 }}
+  VALUE_96:
+    description: Value 96
+    value: ${{ steps.emit.outputs.VALUE_96 }}
+  VALUE_97:
+    description: Value 97
+    value: ${{ steps.emit.outputs.VALUE_97 }}
+  VALUE_98:
+    description: Value 98
+    value: ${{ steps.emit.outputs.VALUE_98 }}
+  VALUE_99:
+    description: Value 99
+    value: ${{ steps.emit.outputs.VALUE_99 }}
+  VALUE_100:
+    description: Value 100
+    value: ${{ steps.emit.outputs.VALUE_100 }}
+  VALUE_101:
+    description: Value 101
+    value: ${{ steps.emit.outputs.VALUE_101 }}
+  VALUE_102:
+    description: Value 102
+    value: ${{ steps.emit.outputs.VALUE_102 }}
+  VALUE_103:
+    description: Value 103
+    value: ${{ steps.emit.outputs.VALUE_103 }}
+  VALUE_104:
+    description: Value 104
+    value: ${{ steps.emit.outputs.VALUE_104 }}
+  VALUE_105:
+    description: Value 105
+    value: ${{ steps.emit.outputs.VALUE_105 }}
+  VALUE_106:
+    description: Value 106
+    value: ${{ steps.emit.outputs.VALUE_106 }}
+  VALUE_107:
+    description: Value 107
+    value: ${{ steps.emit.outputs.VALUE_107 }}
+  VALUE_108:
+    description: Value 108
+    value: ${{ steps.emit.outputs.VALUE_108 }}
+  VALUE_109:
+    description: Value 109
+    value: ${{ steps.emit.outputs.VALUE_109 }}
+  VALUE_110:
+    description: Value 110
+    value: ${{ steps.emit.outputs.VALUE_110 }}
+  VALUE_111:
+    description: Value 111
+    value: ${{ steps.emit.outputs.VALUE_111 }}
+  VALUE_112:
+    description: Value 112
+    value: ${{ steps.emit.outputs.VALUE_112 }}
+  VALUE_113:
+    description: Value 113
+    value: ${{ steps.emit.outputs.VALUE_113 }}
+  VALUE_114:
+    description: Value 114
+    value: ${{ steps.emit.outputs.VALUE_114 }}
+  VALUE_115:
+    description: Value 115
+    value: ${{ steps.emit.outputs.VALUE_115 }}
+  VALUE_116:
+    description: Value 116
+    value: ${{ steps.emit.outputs.VALUE_116 }}
+  VALUE_117:
+    description: Value 117
+    value: ${{ steps.emit.outputs.VALUE_117 }}
+  VALUE_118:
+    description: Value 118
+    value: ${{ steps.emit.outputs.VALUE_118 }}
+  VALUE_119:
+    description: Value 119
+    value: ${{ steps.emit.outputs.VALUE_119 }}
+  VALUE_120:
+    description: Value 120
+    value: ${{ steps.emit.outputs.VALUE_120 }}
+  VALUE_121:
+    description: Value 121
+    value: ${{ steps.emit.outputs.VALUE_121 }}
+  VALUE_122:
+    description: Value 122
+    value: ${{ steps.emit.outputs.VALUE_122 }}
+  VALUE_123:
+    description: Value 123
+    value: ${{ steps.emit.outputs.VALUE_123 }}
+  VALUE_124:
+    description: Value 124
+    value: ${{ steps.emit.outputs.VALUE_124 }}
+  VALUE_125:
+    description: Value 125
+    value: ${{ steps.emit.outputs.VALUE_125 }}
+  VALUE_126:
+    description: Value 126
+    value: ${{ steps.emit.outputs.VALUE_126 }}
+  VALUE_127:
+    description: Value 127
+    value: ${{ steps.emit.outputs.VALUE_127 }}
+  VALUE_128:
+    description: Value 128
+    value: ${{ steps.emit.outputs.VALUE_128 }}
+  VALUE_129:
+    description: Value 129
+    value: ${{ steps.emit.outputs.VALUE_129 }}
+  VALUE_130:
+    description: Value 130
+    value: ${{ steps.emit.outputs.VALUE_130 }}
+  VALUE_131:
+    description: Value 131
+    value: ${{ steps.emit.outputs.VALUE_131 }}
+  VALUE_132:
+    description: Value 132
+    value: ${{ steps.emit.outputs.VALUE_132 }}
+  VALUE_133:
+    description: Value 133
+    value: ${{ steps.emit.outputs.VALUE_133 }}
+  VALUE_134:
+    description: Value 134
+    value: ${{ steps.emit.outputs.VALUE_134 }}
+  VALUE_135:
+    description: Value 135
+    value: ${{ steps.emit.outputs.VALUE_135 }}
+  VALUE_136:
+    description: Value 136
+    value: ${{ steps.emit.outputs.VALUE_136 }}
+  VALUE_137:
+    description: Value 137
+    value: ${{ steps.emit.outputs.VALUE_137 }}
+  VALUE_138:
+    description: Value 138
+    value: ${{ steps.emit.outputs.VALUE_138 }}
+  VALUE_139:
+    description: Value 139
+    value: ${{ steps.emit.outputs.VALUE_139 }}
+  VALUE_140:
+    description: Value 140
+    value: ${{ steps.emit.outputs.VALUE_140 }}
+  VALUE_141:
+    description: Value 141
+    value: ${{ steps.emit.outputs.VALUE_141 }}
+  VALUE_142:
+    description: Value 142
+    value: ${{ steps.emit.outputs.VALUE_142 }}
+  VALUE_143:
+    description: Value 143
+    value: ${{ steps.emit.outputs.VALUE_143 }}
+  VALUE_144:
+    description: Value 144
+    value: ${{ steps.emit.outputs.VALUE_144 }}
+  VALUE_145:
+    description: Value 145
+    value: ${{ steps.emit.outputs.VALUE_145 }}
+  VALUE_146:
+    description: Value 146
+    value: ${{ steps.emit.outputs.VALUE_146 }}
+  VALUE_147:
+    description: Value 147
+    value: ${{ steps.emit.outputs.VALUE_147 }}
+  VALUE_148:
+    description: Value 148
+    value: ${{ steps.emit.outputs.VALUE_148 }}
+  VALUE_149:
+    description: Value 149
+    value: ${{ steps.emit.outputs.VALUE_149 }}
+  VALUE_150:
+    description: Value 150
+    value: ${{ steps.emit.outputs.VALUE_150 }}
+  VALUE_151:
+    description: Value 151
+    value: ${{ steps.emit.outputs.VALUE_151 }}
+  VALUE_152:
+    description: Value 152
+    value: ${{ steps.emit.outputs.VALUE_152 }}
+  VALUE_153:
+    description: Value 153
+    value: ${{ steps.emit.outputs.VALUE_153 }}
+  VALUE_154:
+    description: Value 154
+    value: ${{ steps.emit.outputs.VALUE_154 }}
+  VALUE_155:
+    description: Value 155
+    value: ${{ steps.emit.outputs.VALUE_155 }}
+  VALUE_156:
+    description: Value 156
+    value: ${{ steps.emit.outputs.VALUE_156 }}
+  VALUE_157:
+    description: Value 157
+    value: ${{ steps.emit.outputs.VALUE_157 }}
+  VALUE_158:
+    description: Value 158
+    value: ${{ steps.emit.outputs.VALUE_158 }}
+  VALUE_159:
+    description: Value 159
+    value: ${{ steps.emit.outputs.VALUE_159 }}
+  VALUE_160:
+    description: Value 160
+    value: ${{ steps.emit.outputs.VALUE_160 }}
+  VALUE_161:
+    description: Value 161
+    value: ${{ steps.emit.outputs.VALUE_161 }}
+  VALUE_162:
+    description: Value 162
+    value: ${{ steps.emit.outputs.VALUE_162 }}
+  VALUE_163:
+    description: Value 163
+    value: ${{ steps.emit.outputs.VALUE_163 }}
+  VALUE_164:
+    description: Value 164
+    value: ${{ steps.emit.outputs.VALUE_164 }}
+  VALUE_165:
+    description: Value 165
+    value: ${{ steps.emit.outputs.VALUE_165 }}
+  VALUE_166:
+    description: Value 166
+    value: ${{ steps.emit.outputs.VALUE_166 }}
+  VALUE_167:
+    description: Value 167
+    value: ${{ steps.emit.outputs.VALUE_167 }}
+  VALUE_168:
+    description: Value 168
+    value: ${{ steps.emit.outputs.VALUE_168 }}
+  VALUE_169:
+    description: Value 169
+    value: ${{ steps.emit.outputs.VALUE_169 }}
+  VALUE_170:
+    description: Value 170
+    value: ${{ steps.emit.outputs.VALUE_170 }}
+  VALUE_171:
+    description: Value 171
+    value: ${{ steps.emit.outputs.VALUE_171 }}
+  VALUE_172:
+    description: Value 172
+    value: ${{ steps.emit.outputs.VALUE_172 }}
+  VALUE_173:
+    description: Value 173
+    value: ${{ steps.emit.outputs.VALUE_173 }}
+  VALUE_174:
+    description: Value 174
+    value: ${{ steps.emit.outputs.VALUE_174 }}
+  VALUE_175:
+    description: Value 175
+    value: ${{ steps.emit.outputs.VALUE_175 }}
+  VALUE_176:
+    description: Value 176
+    value: ${{ steps.emit.outputs.VALUE_176 }}
+  VALUE_177:
+    description: Value 177
+    value: ${{ steps.emit.outputs.VALUE_177 }}
+  VALUE_178:
+    description: Value 178
+    value: ${{ steps.emit.outputs.VALUE_178 }}
+  VALUE_179:
+    description: Value 179
+    value: ${{ steps.emit.outputs.VALUE_179 }}
+  VALUE_180:
+    description: Value 180
+    value: ${{ steps.emit.outputs.VALUE_180 }}
+  VALUE_181:
+    description: Value 181
+    value: ${{ steps.emit.outputs.VALUE_181 }}
+  VALUE_182:
+    description: Value 182
+    value: ${{ steps.emit.outputs.VALUE_182 }}
+  VALUE_183:
+    description: Value 183
+    value: ${{ steps.emit.outputs.VALUE_183 }}
+  VALUE_184:
+    description: Value 184
+    value: ${{ steps.emit.outputs.VALUE_184 }}
+  VALUE_185:
+    description: Value 185
+    value: ${{ steps.emit.outputs.VALUE_185 }}
+  VALUE_186:
+    description: Value 186
+    value: ${{ steps.emit.outputs.VALUE_186 }}
+  VALUE_187:
+    description: Value 187
+    value: ${{ steps.emit.outputs.VALUE_187 }}
+  VALUE_188:
+    description: Value 188
+    value: ${{ steps.emit.outputs.VALUE_188 }}
+  VALUE_189:
+    description: Value 189
+    value: ${{ steps.emit.outputs.VALUE_189 }}
+  VALUE_190:
+    description: Value 190
+    value: ${{ steps.emit.outputs.VALUE_190 }}
+  VALUE_191:
+    description: Value 191
+    value: ${{ steps.emit.outputs.VALUE_191 }}
+  VALUE_192:
+    description: Value 192
+    value: ${{ steps.emit.outputs.VALUE_192 }}
+  VALUE_193:
+    description: Value 193
+    value: ${{ steps.emit.outputs.VALUE_193 }}
+  VALUE_194:
+    description: Value 194
+    value: ${{ steps.emit.outputs.VALUE_194 }}
+  VALUE_195:
+    description: Value 195
+    value: ${{ steps.emit.outputs.VALUE_195 }}
+  VALUE_196:
+    description: Value 196
+    value: ${{ steps.emit.outputs.VALUE_196 }}
+  VALUE_197:
+    description: Value 197
+    value: ${{ steps.emit.outputs.VALUE_197 }}
+  VALUE_198:
+    description: Value 198
+    value: ${{ steps.emit.outputs.VALUE_198 }}
+  VALUE_199:
+    description: Value 199
+    value: ${{ steps.emit.outputs.VALUE_199 }}
+  VALUE_200:
+    description: Value 200
+    value: ${{ steps.emit.outputs.VALUE_200 }}
+  VALUE_201:
+    description: Value 201
+    value: ${{ steps.emit.outputs.VALUE_201 }}
+  VALUE_202:
+    description: Value 202
+    value: ${{ steps.emit.outputs.VALUE_202 }}
+  VALUE_203:
+    description: Value 203
+    value: ${{ steps.emit.outputs.VALUE_203 }}
+  VALUE_204:
+    description: Value 204
+    value: ${{ steps.emit.outputs.VALUE_204 }}
+  VALUE_205:
+    description: Value 205
+    value: ${{ steps.emit.outputs.VALUE_205 }}
+  VALUE_206:
+    description: Value 206
+    value: ${{ steps.emit.outputs.VALUE_206 }}
+  VALUE_207:
+    description: Value 207
+    value: ${{ steps.emit.outputs.VALUE_207 }}
+  VALUE_208:
+    description: Value 208
+    value: ${{ steps.emit.outputs.VALUE_208 }}
+  VALUE_209:
+    description: Value 209
+    value: ${{ steps.emit.outputs.VALUE_209 }}
+  VALUE_210:
+    description: Value 210
+    value: ${{ steps.emit.outputs.VALUE_210 }}
+  VALUE_211:
+    description: Value 211
+    value: ${{ steps.emit.outputs.VALUE_211 }}
+  VALUE_212:
+    description: Value 212
+    value: ${{ steps.emit.outputs.VALUE_212 }}
+  VALUE_213:
+    description: Value 213
+    value: ${{ steps.emit.outputs.VALUE_213 }}
+  VALUE_214:
+    description: Value 214
+    value: ${{ steps.emit.outputs.VALUE_214 }}
+  VALUE_215:
+    description: Value 215
+    value: ${{ steps.emit.outputs.VALUE_215 }}
+  VALUE_216:
+    description: Value 216
+    value: ${{ steps.emit.outputs.VALUE_216 }}
+  VALUE_217:
+    description: Value 217
+    value: ${{ steps.emit.outputs.VALUE_217 }}
+  VALUE_218:
+    description: Value 218
+    value: ${{ steps.emit.outputs.VALUE_218 }}
+  VALUE_219:
+    description: Value 219
+    value: ${{ steps.emit.outputs.VALUE_219 }}
+  VALUE_220:
+    description: Value 220
+    value: ${{ steps.emit.outputs.VALUE_220 }}
+  VALUE_221:
+    description: Value 221
+    value: ${{ steps.emit.outputs.VALUE_221 }}
+  VALUE_222:
+    description: Value 222
+    value: ${{ steps.emit.outputs.VALUE_222 }}
+  VALUE_223:
+    description: Value 223
+    value: ${{ steps.emit.outputs.VALUE_223 }}
+  VALUE_224:
+    description: Value 224
+    value: ${{ steps.emit.outputs.VALUE_224 }}
+  VALUE_225:
+    description: Value 225
+    value: ${{ steps.emit.outputs.VALUE_225 }}
+  VALUE_226:
+    description: Value 226
+    value: ${{ steps.emit.outputs.VALUE_226 }}
+  VALUE_227:
+    description: Value 227
+    value: ${{ steps.emit.outputs.VALUE_227 }}
+  VALUE_228:
+    description: Value 228
+    value: ${{ steps.emit.outputs.VALUE_228 }}
+  VALUE_229:
+    description: Value 229
+    value: ${{ steps.emit.outputs.VALUE_229 }}
+  VALUE_230:
+    description: Value 230
+    value: ${{ steps.emit.outputs.VALUE_230 }}
+  VALUE_231:
+    description: Value 231
+    value: ${{ steps.emit.outputs.VALUE_231 }}
+  VALUE_232:
+    description: Value 232
+    value: ${{ steps.emit.outputs.VALUE_232 }}
+  VALUE_233:
+    description: Value 233
+    value: ${{ steps.emit.outputs.VALUE_233 }}
+  VALUE_234:
+    description: Value 234
+    value: ${{ steps.emit.outputs.VALUE_234 }}
+  VALUE_235:
+    description: Value 235
+    value: ${{ steps.emit.outputs.VALUE_235 }}
+  VALUE_236:
+    description: Value 236
+    value: ${{ steps.emit.outputs.VALUE_236 }}
+  VALUE_237:
+    description: Value 237
+    value: ${{ steps.emit.outputs.VALUE_237 }}
+  VALUE_238:
+    description: Value 238
+    value: ${{ steps.emit.outputs.VALUE_238 }}
+  VALUE_239:
+    description: Value 239
+    value: ${{ steps.emit.outputs.VALUE_239 }}
+  VALUE_240:
+    description: Value 240
+    value: ${{ steps.emit.outputs.VALUE_240 }}
+  VALUE_241:
+    description: Value 241
+    value: ${{ steps.emit.outputs.VALUE_241 }}
+  VALUE_242:
+    description: Value 242
+    value: ${{ steps.emit.outputs.VALUE_242 }}
+  VALUE_243:
+    description: Value 243
+    value: ${{ steps.emit.outputs.VALUE_243 }}
+  VALUE_244:
+    description: Value 244
+    value: ${{ steps.emit.outputs.VALUE_244 }}
+  VALUE_245:
+    description: Value 245
+    value: ${{ steps.emit.outputs.VALUE_245 }}
+  VALUE_246:
+    description: Value 246
+    value: ${{ steps.emit.outputs.VALUE_246 }}
+  VALUE_247:
+    description: Value 247
+    value: ${{ steps.emit.outputs.VALUE_247 }}
+  VALUE_248:
+    description: Value 248
+    value: ${{ steps.emit.outputs.VALUE_248 }}
+  VALUE_249:
+    description: Value 249
+    value: ${{ steps.emit.outputs.VALUE_249 }}
+  VALUE_250:
+    description: Value 250
+    value: ${{ steps.emit.outputs.VALUE_250 }}
+  VALUE_251:
+    description: Value 251
+    value: ${{ steps.emit.outputs.VALUE_251 }}
+  VALUE_252:
+    description: Value 252
+    value: ${{ steps.emit.outputs.VALUE_252 }}
+  VALUE_253:
+    description: Value 253
+    value: ${{ steps.emit.outputs.VALUE_253 }}
+  VALUE_254:
+    description: Value 254
+    value: ${{ steps.emit.outputs.VALUE_254 }}
+  VALUE_255:
+    description: Value 255
+    value: ${{ steps.emit.outputs.VALUE_255 }}
+  VALUE_256:
+    description: Value 256
+    value: ${{ steps.emit.outputs.VALUE_256 }}
+  VALUE_257:
+    description: Value 257
+    value: ${{ steps.emit.outputs.VALUE_257 }}
+  VALUE_258:
+    description: Value 258
+    value: ${{ steps.emit.outputs.VALUE_258 }}
+  VALUE_259:
+    description: Value 259
+    value: ${{ steps.emit.outputs.VALUE_259 }}
+  VALUE_260:
+    description: Value 260
+    value: ${{ steps.emit.outputs.VALUE_260 }}
+  VALUE_261:
+    description: Value 261
+    value: ${{ steps.emit.outputs.VALUE_261 }}
+  VALUE_262:
+    description: Value 262
+    value: ${{ steps.emit.outputs.VALUE_262 }}
+  VALUE_263:
+    description: Value 263
+    value: ${{ steps.emit.outputs.VALUE_263 }}
+  VALUE_264:
+    description: Value 264
+    value: ${{ steps.emit.outputs.VALUE_264 }}
+  VALUE_265:
+    description: Value 265
+    value: ${{ steps.emit.outputs.VALUE_265 }}
+  VALUE_266:
+    description: Value 266
+    value: ${{ steps.emit.outputs.VALUE_266 }}
+  VALUE_267:
+    description: Value 267
+    value: ${{ steps.emit.outputs.VALUE_267 }}
+  VALUE_268:
+    description: Value 268
+    value: ${{ steps.emit.outputs.VALUE_268 }}
+  VALUE_269:
+    description: Value 269
+    value: ${{ steps.emit.outputs.VALUE_269 }}
+  VALUE_270:
+    description: Value 270
+    value: ${{ steps.emit.outputs.VALUE_270 }}
+  VALUE_271:
+    description: Value 271
+    value: ${{ steps.emit.outputs.VALUE_271 }}
+  VALUE_272:
+    description: Value 272
+    value: ${{ steps.emit.outputs.VALUE_272 }}
+  VALUE_273:
+    description: Value 273
+    value: ${{ steps.emit.outputs.VALUE_273 }}
+  VALUE_274:
+    description: Value 274
+    value: ${{ steps.emit.outputs.VALUE_274 }}
+  VALUE_275:
+    description: Value 275
+    value: ${{ steps.emit.outputs.VALUE_275 }}
+  VALUE_276:
+    description: Value 276
+    value: ${{ steps.emit.outputs.VALUE_276 }}
+  VALUE_277:
+    description: Value 277
+    value: ${{ steps.emit.outputs.VALUE_277 }}
+  VALUE_278:
+    description: Value 278
+    value: ${{ steps.emit.outputs.VALUE_278 }}
+  VALUE_279:
+    description: Value 279
+    value: ${{ steps.emit.outputs.VALUE_279 }}
+  VALUE_280:
+    description: Value 280
+    value: ${{ steps.emit.outputs.VALUE_280 }}
+  VALUE_281:
+    description: Value 281
+    value: ${{ steps.emit.outputs.VALUE_281 }}
+  VALUE_282:
+    description: Value 282
+    value: ${{ steps.emit.outputs.VALUE_282 }}
+  VALUE_283:
+    description: Value 283
+    value: ${{ steps.emit.outputs.VALUE_283 }}
+  VALUE_284:
+    description: Value 284
+    value: ${{ steps.emit.outputs.VALUE_284 }}
+  VALUE_285:
+    description: Value 285
+    value: ${{ steps.emit.outputs.VALUE_285 }}
+  VALUE_286:
+    description: Value 286
+    value: ${{ steps.emit.outputs.VALUE_286 }}
+  VALUE_287:
+    description: Value 287
+    value: ${{ steps.emit.outputs.VALUE_287 }}
+  VALUE_288:
+    description: Value 288
+    value: ${{ steps.emit.outputs.VALUE_288 }}
+  VALUE_289:
+    description: Value 289
+    value: ${{ steps.emit.outputs.VALUE_289 }}
+  VALUE_290:
+    description: Value 290
+    value: ${{ steps.emit.outputs.VALUE_290 }}
+  VALUE_291:
+    description: Value 291
+    value: ${{ steps.emit.outputs.VALUE_291 }}
+  VALUE_292:
+    description: Value 292
+    value: ${{ steps.emit.outputs.VALUE_292 }}
+  VALUE_293:
+    description: Value 293
+    value: ${{ steps.emit.outputs.VALUE_293 }}
+  VALUE_294:
+    description: Value 294
+    value: ${{ steps.emit.outputs.VALUE_294 }}
+  VALUE_295:
+    description: Value 295
+    value: ${{ steps.emit.outputs.VALUE_295 }}
+  VALUE_296:
+    description: Value 296
+    value: ${{ steps.emit.outputs.VALUE_296 }}
+  VALUE_297:
+    description: Value 297
+    value: ${{ steps.emit.outputs.VALUE_297 }}
+  VALUE_298:
+    description: Value 298
+    value: ${{ steps.emit.outputs.VALUE_298 }}
+  VALUE_299:
+    description: Value 299
+    value: ${{ steps.emit.outputs.VALUE_299 }}
+  VALUE_300:
+    description: Value 300
+    value: ${{ steps.emit.outputs.VALUE_300 }}
+
+runs:
+  using: composite
+  steps:
+    - name: Emit 300 outputs
+      id: emit
+      shell: bash
+      run: |
+        for number in $(seq 1 300); do
+          echo "VALUE_${number}=value-${number}" >> "$GITHUB_OUTPUT"
+        done
+        echo "UNDECLARED=never-seen-outside" >> "$GITHUB_OUTPUT"

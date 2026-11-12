@@ -46,3 +46,17 @@ jobs:
 
       - name: Guarded action through self-repository syntax
         uses: $/src/actions/guarded
+
+      - name: Action with 300 declared outputs
+        id: many
+        uses: $/src/actions/many-outputs
+
+      - name: Read outputs back in the workflow
+        shell: bash
+        env:
+          FIRST: ${{ steps.many.outputs.VALUE_1 }}
+          MIDDLE: ${{ steps.many.outputs.VALUE_150 }}
+          LAST: ${{ steps.many.outputs.VALUE_300 }}
+          UNDECLARED: ${{ steps.many.outputs.UNDECLARED }}
+        run: |
+          echo "MANY first=${FIRST} middle=${MIDDLE} last=${LAST} undeclared=[${UNDECLARED}]"
