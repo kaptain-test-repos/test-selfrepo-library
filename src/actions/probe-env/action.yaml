@@ -1,0 +1,21 @@
+name: Probe Env
+description: Reports whether env set on the calling uses step reaches a composite action's run step
+
+inputs:
+  via-input:
+    description: 'A value passed the usual way, for comparison'
+    required: false
+    default: ''
+
+runs:
+  using: composite
+  steps:
+    - name: Report
+      shell: bash
+      env:
+        FROM_INPUT: ${{ inputs.via-input }}
+        FROM_ENV_CONTEXT: ${{ env.FROM_STEP_ENV }}
+      run: |
+        echo "ENVPROBE process env FROM_STEP_ENV=[${FROM_STEP_ENV:-}]"
+        echo "ENVPROBE env context FROM_ENV_CONTEXT=[${FROM_ENV_CONTEXT}]"
+        echo "ENVPROBE input FROM_INPUT=[${FROM_INPUT}]"

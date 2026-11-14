@@ -60,3 +60,10 @@ jobs:
           UNDECLARED: ${{ steps.many.outputs.UNDECLARED }}
         run: |
           echo "MANY first=${FIRST} middle=${MIDDLE} last=${LAST} undeclared=[${UNDECLARED}]"
+
+      - name: Action called with env on the uses step
+        uses: $/src/actions/probe-env
+        env:
+          FROM_STEP_ENV: set-on-the-uses-step
+        with:
+          via-input: set-through-with
